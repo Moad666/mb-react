@@ -7,6 +7,8 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import ForgotPassword from './pages/ForgotPassword';
+import ResetPassword from './pages/ResetPassword';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +19,14 @@ const router = createBrowserRouter([
   {
     path: "/register",
     element: <Register />,
+  },
+  {
+    path: "/forgotPassword",
+    element: <ForgotPassword />,
+  },
+  {
+    path: "/resetpassword/:user_id",
+    element: <ResetPassword />
   },
 ]);
 
